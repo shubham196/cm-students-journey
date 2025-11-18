@@ -15,11 +15,17 @@ import {
   Sparkles
 } from 'lucide-react';
 
-const DashboardLayout = () => {
+const DashboardLayout = ({ isAdmin = false }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { student, logout } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  
+  // If admin mode, redirect to admin layout
+  if (isAdmin) {
+    // This will be handled by AdminLayout
+    return null;
+  }
 
   const navItems = [
     { path: '/', icon: Home, label: 'Dashboard' },
