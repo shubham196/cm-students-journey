@@ -126,4 +126,4 @@ const StudentDetails = () => {
   );
 };
 
-export default AdmissionJourney;
+export default StudentDetails;
