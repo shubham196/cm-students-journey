@@ -4,14 +4,15 @@ import { useAuth } from '../context/AuthContext';
 import { Button } from '../components/ui/button';
 import { 
   Home, 
-  MapPin, 
+  Activity,
   FileText, 
   Upload, 
   User, 
   LogOut, 
   Menu,
   X,
-  GraduationCap
+  GraduationCap,
+  Sparkles
 } from 'lucide-react';
 
 const DashboardLayout = () => {
@@ -22,7 +23,8 @@ const DashboardLayout = () => {
 
   const navItems = [
     { path: '/', icon: Home, label: 'Dashboard' },
-    { path: '/journey', icon: MapPin, label: 'Admission Journey' },
+    { path: '/status', icon: Sparkles, label: 'Journey Status' },
+    { path: '/details', icon: Activity, label: 'Student Details' },
     { path: '/forms/personal', icon: FileText, label: 'Forms' },
     { path: '/documents', icon: Upload, label: 'Documents' },
     { path: '/profile', icon: User, label: 'Profile' },
@@ -30,7 +32,7 @@ const DashboardLayout = () => {
 
   const mobileNavItems = [
     { path: '/', icon: Home, label: 'Home' },
-    { path: '/journey', icon: MapPin, label: 'Journey' },
+    { path: '/status', icon: Sparkles, label: 'Status' },
     { path: '/documents', icon: Upload, label: 'Upload' },
     { path: '/profile', icon: User, label: 'Profile' },
   ];

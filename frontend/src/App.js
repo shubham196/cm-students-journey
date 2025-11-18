@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import DashboardLayout from './layouts/DashboardLayout';
 import Dashboard from './pages/Dashboard';
-import AdmissionJourney from './pages/AdmissionJourney';
+import AdmissionStatus from './pages/AdmissionStatus';
+import StudentDetails from './pages/StudentDetails';
 import PersonalDetailsForm from './pages/PersonalDetailsForm';
 import AddressDetailsForm from './pages/AddressDetailsForm';
 import AcademicDetailsForm from './pages/AcademicDetailsForm';
@@ -30,7 +31,8 @@ function App() {
             </PrivateRoute>
           }>
             <Route index element={<Dashboard />} />
-            <Route path="journey" element={<AdmissionJourney />} />
+            <Route path="status" element={<AdmissionStatus />} />
+            <Route path="details" element={<StudentDetails />} />
             <Route path="forms/personal" element={<PersonalDetailsForm />} />
             <Route path="forms/address" element={<AddressDetailsForm />} />
             <Route path="forms/academic" element={<AcademicDetailsForm />} />

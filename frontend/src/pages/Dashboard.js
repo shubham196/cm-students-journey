@@ -46,10 +46,10 @@ const Dashboard = () => {
       color: 'from-green-500 to-green-600'
     },
     { 
-      title: 'Admission Journey', 
-      description: 'Track your progress',
+      title: 'Student Details', 
+      description: 'View your application details',
       icon: CheckCircle,
-      link: '/journey',
+      link: '/details',
       color: 'from-purple-500 to-purple-600'
     }
   ];
