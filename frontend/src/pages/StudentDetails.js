@@ -66,8 +66,8 @@ const StudentDetails = () => {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Admission Journey</h1>
-        <p className="text-gray-600">Track each step of your admission process</p>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Student Details</h1>
+        <p className="text-gray-600">Complete your application step by step</p>
       </div>
 
       <div className="space-y-4">
